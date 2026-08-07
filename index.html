@@ -288,7 +288,7 @@
             }
 
             /* Ajuste dos botões de troca de camada para o rodapé */
-            .nav-btn { top: auto; bottom: 20px; transform: none; width: 40px; height: 40px; font-size: 20px; }
+            .nav-btn { position: fixed !important; top: auto; bottom: calc(16px + env(safe-area-inset-bottom)); transform: none; width: 40px; height: 40px; font-size: 20px; z-index: 2000; }
             #prev-btn { left: 20px; }
             #next-btn { right: 20px; }
         }
